@@ -1,68 +1,60 @@
-# FiveM Media — Server Resource
+# FiveM Media — Official Resource
 
-The public download and documentation repository for the **FiveM Media** standalone FiveM resource.
+Public downloads and installation guides for the **FiveM Media** FiveM server resource.
 
-- **Current package:** `fivem_media` v0.5.6
-- **Resource folder:** `fivem_media/`
-- **Download ZIP:** [Download v0.5.6](releases/v0.5.6/fivem_media-v0.5.6.zip)
-- **Website:** https://media.dnnsitelaunch.com/
+- **Current resource:** v0.5.6
+- **Website:** https://fivemmedia.dnnstudios.workers.dev/
+- **Latest ZIP:** [Download fivem_media-latest.zip](https://fivemmedia.dnnstudios.workers.dev/downloads/fivem_media-latest.zip)
+- **Versioned ZIP:** [Download v0.5.6](https://fivemmedia.dnnstudios.workers.dev/downloads/fivem_media-v0.5.6.zip)
 
-This repository contains only the downloadable FiveM resource and its setup documentation. It does **not** contain the FiveM Media website source, Cloudflare Worker source, database, credentials, or private server keys.
+## Install
 
-## Important status notice
+1. Download and extract the ZIP.
+2. Put the extracted `fivem_media` folder in your server's `resources` directory.
+3. Add your server's existing FiveM Media settings to `server.cfg`:
 
-The v0.5.6 custom recorder is **experimental**. It uses a custom NUI/WebGL canvas capture path and the browser `MediaRecorder` API; it does not use Rockstar Editor, GTA's recording system, or the separate ScreenCapture resource. Capture startup has not been verified across all FiveM/CEF/GPU configurations. In particular, a recorder that stays on `STARTING` is not a successful recording. See [Troubleshooting](docs/TROUBLESHOOTING.md) before deploying it on a live server.
+```cfg
+set fivem_media_api "https://fivemmedia.dnnstudios.workers.dev"
+set fivem_media_claim "YOUR_SERVER_CLAIM_CODE"
+set fivem_media_join_code "YOUR_CFX_JOIN_CODE"
+ensure fivem_media
+```
 
-## What this resource provides
+4. Replace the placeholders with the values from your FiveM Media dashboard. Keep your claim code private.
+5. Restart the resource/server and run `/fmstatus` in game.
 
-- Standalone `fivem_media` resource.
-- FiveM Media server claim and player-count heartbeat integration.
-- Global FiveM account-link command.
-- Custom NUI recorder prototype, using in-memory video chunks and direct upload flow.
-- Upload-to-dashboard workflow for private clip review and publishing.
+Full instructions: [Installation guide](docs/INSTALLATION.md).
 
-## Quick start
-
-1. Create or sign in to an account at [FiveM Media](https://fivemmedia.dnnstudios.workers.dev/).
-2. Open the Creator Dashboard and create a server claim code.
-3. Install the `fivem_media` folder in your server's `resources` directory.
-4. Add the server convars and `ensure` line shown in [Installation](docs/INSTALLATION.md).
-5. Restart the resource and run `/fmstatus` in game.
-6. Try `/fmclip` only after `/fmstatus` reports `NUI: READY`.
-
-Full instructions:
+## Documentation
 
 - [Installation](docs/INSTALLATION.md)
 - [Configuration](docs/CONFIGURATION.md)
 - [Commands](docs/COMMANDS.md)
-- [Account linking and server verification](docs/ACCOUNT-LINKING.md)
+- [Account linking](docs/ACCOUNT-LINKING.md)
 - [Troubleshooting](docs/TROUBLESHOOTING.md)
+- [Changelog](CHANGELOG.md)
 
-## Requirements
+## Included features
 
-- A running FiveM FXServer.
-- A FiveM client with NUI enabled.
-- A FiveM Media account and a server claim code for server verification and upload-ticket access.
-- The server must be able to make HTTPS requests to the configured FiveM Media Worker URL.
+- Server claim and player-count heartbeat.
+- Global player account linking with `/fmlink`.
+- Custom NUI recorder prototype and in-game controls.
+- Upload flow to FiveM Media for private clip review.
 
-No ScreenCapture resource is required for v0.5.6.
+## Recorder status — read before installing
 
-## Downloads
+The custom recorder is experimental. It uses a NUI/WebGL game-view capture path and browser `MediaRecorder`; it does not use Rockstar Editor, GTA's recording system, or the separate ScreenCapture resource. The game-view texture path depends on FiveM client/NUI runtime behavior and has not been verified across all client/CEF/GPU combinations. A NUI `READY` response only confirms the page loaded; it does not prove that game frames are capturable. If the recorder stays on `STARTING`, it has not successfully started. See [Troubleshooting](docs/TROUBLESHOOTING.md).
 
-Use the ZIP in [releases/v0.5.6/](releases/v0.5.6/). When a newer release is published, download the ZIP attached to the newest GitHub Release.
+The resource does not intentionally write clips to a local recordings folder. Encoded video is held in NUI memory and uploaded to the configured Worker. If the client closes before upload succeeds, an unsent in-memory clip may be lost. Current capture is video-only.
 
-## Reporting a problem
+## Repository scope
 
-When reporting a recorder issue, include:
+This public repository is for the FiveM resource download and user documentation. It does not contain the private Cloudflare Worker source, database exports, user data, server claim codes, or API secrets.
 
-- Resource version (`/fmstatus` includes the NUI and recorder state).
-- The exact command used (`/fmclip`, `/save`, etc.).
-- The full `/fmstatus` output.
-- Any FiveM F8 console error from `[FiveM Media]`.
-- Your FiveM game build and whether NUI/CEF hardware acceleration is enabled.
+## Support
 
-Do not post passwords, session tokens, private server keys, claim codes, or upload tokens in an issue.
+When reporting an issue, include the resource version, complete `/fmstatus` output, exact in-game error, and relevant FXServer/F8 console messages. Never publish passwords, tokens, server keys, or claim codes.
 
 ## License
 
-No open-source license is granted by this repository unless a license file is added by the project owner. Public visibility allows people to view and download the files; it does not automatically grant permission to redistribute or modify them.
+No open-source license is granted unless a LICENSE file is added. Public repository visibility alone does not grant permission to redistribute or modify the code.
