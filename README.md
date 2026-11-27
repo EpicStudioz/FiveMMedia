@@ -1,13 +1,13 @@
 # FiveM Media — Official Resource
 
-Public downloads and installation guides for the **FiveM Media** FiveM server resource.
+Public download page and installation documentation for the **FiveM Media** FiveM server resource.
 
 - **Current resource:** v0.5.6
 - **Website:** https://fivemmedia.dnnstudios.workers.dev/
-- **Latest resource ZIP:** [Download fivem_media-latest.zip](https://fivemmedia.dnnstudios.workers.dev/downloads/fivem_media-latest.zip)
-- **Versioned resource ZIP:** [Download v0.5.6](https://fivemmedia.dnnstudios.workers.dev/downloads/fivem_media-v0.5.6.zip)
+- **Download latest resource:** [fivem_media-latest.zip](https://fivemmedia.dnnstudios.workers.dev/downloads/fivem_media-latest.zip)
+- **Download version 0.5.6:** [fivem_media-v0.5.6.zip](https://fivemmedia.dnnstudios.workers.dev/downloads/fivem_media-v0.5.6.zip)
 
-The ZIP download is served by the FiveM Media website Worker. The repository also contains the resource Lua/config files and setup documentation.
+The resource ZIP is hosted by the official FiveM Media website Worker. This repository is the public download hub and documentation; it does not contain the private website/backend source or secrets.
 
 ## Install
 
@@ -52,7 +52,7 @@ The resource does not intentionally write clips to a local recordings folder. En
 
 ## Repository scope
 
-This public repository is for the FiveM resource download and user documentation. It does not contain the private Cloudflare Worker source, database exports, user data, server claim codes, or API secrets.
+This public repository contains the resource download links and user documentation. It does not contain the private Cloudflare Worker source, database exports, user data, server claim codes, or API secrets.
 
 ## Support
 
