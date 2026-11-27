@@ -3,9 +3,9 @@
 Public downloads and installation guides for the **FiveM Media** FiveM server resource.
 
 - **Current resource:** v0.5.6
-- **Website:** https://fivemmedia.dnnstudios.workers.dev/
-- **Latest ZIP:** [Download fivem_media-latest.zip](https://fivemmedia.dnnstudios.workers.dev/downloads/fivem_media-latest.zip)
-- **Versioned ZIP:** [Download v0.5.6](https://fivemmedia.dnnstudios.workers.dev/downloads/fivem_media-v0.5.6.zip)
+- **Website:** https://media.dnnsitelaunch.com/
+- **Latest ZIP:** [Download fivem_media-latest.zip](https://media.dnnsitelaunch.com/downloads/fivem_media-latest.zip)
+- **Versioned ZIP:** [Download v0.5.6](https://media.dnnsitelaunch.com/downloads/fivem_media-v0.5.6.zip)
 
 ## Install
 
@@ -14,7 +14,7 @@ Public downloads and installation guides for the **FiveM Media** FiveM server re
 3. Add your server's existing FiveM Media settings to `server.cfg`:
 
 ```cfg
-set fivem_media_api "https://fivemmedia.dnnstudios.workers.dev"
+set fivem_media_api "https://media.dnnsitelaunch.com"
 set fivem_media_claim "YOUR_SERVER_CLAIM_CODE"
 set fivem_media_join_code "YOUR_CFX_JOIN_CODE"
 ensure fivem_media
