@@ -5,7 +5,7 @@ The public download and documentation repository for the **FiveM Media** standal
 - **Current package:** `fivem_media` v0.5.6
 - **Resource folder:** `fivem_media/`
 - **Download ZIP:** [Download v0.5.6](releases/v0.5.6/fivem_media-v0.5.6.zip)
-- **Website:** https://fivemmedia.dnnstudios.workers.dev/
+- **Website:** https://media.dnnsitelaunch.com/
 
 This repository contains only the downloadable FiveM resource and its setup documentation. It does **not** contain the FiveM Media website source, Cloudflare Worker source, database, credentials, or private server keys.
 
