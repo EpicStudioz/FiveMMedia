@@ -2,8 +2,8 @@
 
 The official FiveM Media resource ZIP is hosted on the FiveM Media download server:
 
-- [Download latest resource ZIP](https://fivemmedia.dnnstudios.workers.dev/downloads/fivem_media-latest.zip)
-- [Download v0.5.6 ZIP](https://fivemmedia.dnnstudios.workers.dev/downloads/fivem_media-v0.5.6.zip)
+- [Download latest resource ZIP](https://media.dnnsitelaunch.com/downloads/fivem_media-latest.zip)
+- [Download v0.5.6 ZIP](https://media.dnnsitelaunch.com/downloads/fivem_media-v0.5.6.zip)
 
 ## Verify the download
 
