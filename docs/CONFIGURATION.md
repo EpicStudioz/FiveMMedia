@@ -11,7 +11,7 @@ The resource reads these server convars from `server.cfg`.
 Example:
 
 ```cfg
-set fivem_media_api "https://fivemmedia.dnnstudios.workers.dev"
+set fivem_media_api "https://media.dnnsitelaunch.com"
 set fivem_media_claim "YOUR_SERVER_CLAIM_CODE"
 set fivem_media_join_code "YOUR_CFX_JOIN_CODE"
 ensure fivem_media
