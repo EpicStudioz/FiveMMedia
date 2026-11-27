@@ -3,25 +3,28 @@
 Public downloads and installation guides for the **FiveM Media** FiveM server resource.
 
 - **Current resource:** v0.5.6
-- **Website:** https://media.dnnsitelaunch.com/
-- **Latest ZIP:** [Download fivem_media-latest.zip](https://media.dnnsitelaunch.com/downloads/fivem_media-latest.zip)
-- **Versioned ZIP:** [Download v0.5.6](https://media.dnnsitelaunch.com/downloads/fivem_media-v0.5.6.zip)
+- **Website:** https://fivemmedia.dnnstudios.workers.dev/
+- **Latest resource ZIP:** [Download fivem_media-latest.zip](https://fivemmedia.dnnstudios.workers.dev/downloads/fivem_media-latest.zip)
+- **Versioned resource ZIP:** [Download v0.5.6](https://fivemmedia.dnnstudios.workers.dev/downloads/fivem_media-v0.5.6.zip)
+
+The ZIP download is served by the FiveM Media website Worker. The repository also contains the resource Lua/config files and setup documentation.
 
 ## Install
 
-1. Download and extract the ZIP.
-2. Put the extracted `fivem_media` folder in your server's `resources` directory.
-3. Add your server's existing FiveM Media settings to `server.cfg`:
+1. Download the latest resource ZIP using the link above.
+2. Extract the ZIP. It contains a folder named `fivem_media`.
+3. Put that folder in your FXServer `resources` directory.
+4. Add your server settings to `server.cfg`:
 
 ```cfg
-set fivem_media_api "https://media.dnnsitelaunch.com"
-set fivem_media_claim "YOUR_SERVER_CLAIM_CODE"
+set fivem_media_api "https://fivemmedia.dnnstudios.workers.dev"
+set fivem_media_claim "YOUR_ONE_TIME_SERVER_CLAIM_CODE"
 set fivem_media_join_code "YOUR_CFX_JOIN_CODE"
 ensure fivem_media
 ```
 
-4. Replace the placeholders with the values from your FiveM Media dashboard. Keep your claim code private.
-5. Restart the resource/server and run `/fmstatus` in game.
+5. Generate the one-time claim code from your FiveM Media dashboard. Keep it private.
+6. Restart the resource/server and run `/fmstatus` in game.
 
 Full instructions: [Installation guide](docs/INSTALLATION.md).
 
@@ -34,12 +37,12 @@ Full instructions: [Installation guide](docs/INSTALLATION.md).
 - [Troubleshooting](docs/TROUBLESHOOTING.md)
 - [Changelog](CHANGELOG.md)
 
-## Included features
+## Features
 
 - Server claim and player-count heartbeat.
 - Global player account linking with `/fmlink`.
 - Custom NUI recorder prototype and in-game controls.
-- Upload flow to FiveM Media for private clip review.
+- Upload-ticket flow to FiveM Media for private clip review.
 
 ## Recorder status — read before installing
 
