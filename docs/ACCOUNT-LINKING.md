@@ -1,6 +1,6 @@
 # Account linking
 
-1. Sign in at [FiveM Media](https://fivemmedia.dnnstudios.workers.dev/).
+1. Sign in at [FiveM Media](https://media.dnnsitelaunch.com/).
 2. Open Creator Dashboard → Link FiveM Account.
 3. Generate a one-time link code.
 4. Join a server with the verified FiveM Media resource.
