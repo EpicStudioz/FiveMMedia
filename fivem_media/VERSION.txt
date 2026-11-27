@@ -1,4 +1,0 @@
-FiveM Media Resource v0.5.6
-Standalone custom NUI recorder.
-Critical startup fix: config.lua is loaded as a shared script so FMConfig exists on the client and server.
-No ScreenCapture dependency.
