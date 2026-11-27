@@ -6,8 +6,8 @@
 - A FiveM Media account and a server claim code from the website.
 
 ## Download
-- [Latest resource ZIP](https://media.dnnsitelaunch.com/downloads/fivem_media-latest.zip)
-- [Version 0.5.6 ZIP](https://media.dnnsitelaunch.com/downloads/fivem_media-v0.5.6.zip)
+- [Latest resource ZIP](https://fivemmedia.dnnstudios.workers.dev/downloads/fivem_media-latest.zip)
+- [Version 0.5.6 ZIP](https://fivemmedia.dnnstudios.workers.dev/downloads/fivem_media-v0.5.6.zip)
 
 ## Install
 1. Download and extract the ZIP.
@@ -16,7 +16,7 @@
 4. Add the following to `server.cfg`, replacing the placeholders with your dashboard values:
 
 ```cfg
-set fivem_media_api "https://media.dnnsitelaunch.com"
+set fivem_media_api "https://fivemmedia.dnnstudios.workers.dev"
 set fivem_media_claim "YOUR_SERVER_CLAIM_CODE"
 set fivem_media_join_code "YOUR_CFX_JOIN_CODE"
 ensure fivem_media
